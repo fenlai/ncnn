@@ -1,6 +1,6 @@
 #include "yolov5focus.h"
 
-namespace ncnn{
+namespace ncnn {
 
 YoloV5Focus::YoloV5Focus()
 {
@@ -43,6 +43,4 @@ int YoloV5Focus::forward(const ncnn::Mat& bottom_blob, ncnn::Mat& top_blob, cons
     return 0;
 }
 DEFINE_LAYER_CREATOR(YoloV5Focus)
-}
-
-
+} // namespace ncnn
